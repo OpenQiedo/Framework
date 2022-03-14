@@ -1,23 +1,52 @@
 {
     "name": "openqiedo/framework",
-    "description": "The Qiedo PHP Framework Libraries",
-    "type": "library",
+    "description": "The Qiedo PHP Framework",
     "version": "0.1.0-dev",
+    "type": "library",
+    "keywords": [
+    	"PHP Framework", 
+    	"Qiedo"
+    ],
+    "homepage": "https://github.com/OpenQiedo/Framework",
+    "readme": "README.md",
     "license": "Apache-2.0",
+    "authors": [
+    	{
+    		"name": "Qiedo",
+    		"email": "me@openqiedo.com",
+    		"homepage": "https://www.openqiedo.com",
+    		"role": "Founder and Developer"
+    	}
+    ],
+    "support": {
+    	"email": "support@openqiedo.com"
+    },
+    "funding": [
+    	{
+    		"type": "Github",
+    		"url": "https://github.com/OpenQiedo/OpenQiedo"
+    	}
+    ],
     "autoload": {
         "psr-4": {
             "Openqiedo\\Framework\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "Qiedo",
-            "email": "me@openqiedo.com",
-            "homepage": "https://www.openqiedo.com",
-            "role": "Founder and Developer"
-        }
-    ],
+    "autoload-dev": {
+    	"psr-4": {
+    		"Openqiedo\\Tests\\": "tests/"
+    	}
+    },
+    "minimum-stability": "dev",
     "require": {
-    	"php": ">=7.4.0"
+    	"php": ">=7.4.0",
+    	"openqiedo/framework": "0.1.0-dev"
+    },
+    "prefer-stable": true,
+    "config": {
+    	"sort-packages": true,
+    	"allow-plugins": {
+    		"composer/package-versions-deprecated": true
+    	}
     }
 }
